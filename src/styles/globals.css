@@ -1,0 +1,82 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+ 
+
+@layer base {
+
+/* libre-franklin-regular - latin */
+@font-face {
+  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: 'Libre Franklin';
+  font-style: normal;
+  font-weight: 400;
+  src: url('../fonts/libre-franklin-v14-latin-regular.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+
+  :root {
+    --background: 202 7% 3%;
+    --background-color: 120 12% 16%;
+
+    --foreground: 202 7% 93%;    
+    --foreground-special: 202 22% 25%;
+    --foreground-dull: 202 7% 36%;
+
+    --header: 206 64% 12%;
+
+    --card: 202 7% 12%;
+    --card-foreground: 202 7% 93%;
+
+    --popover: 202 7% 12%;
+    --popover-foreground: 202 7% 93%;
+
+    --primary: 202 7% 17%;
+    --primary-foreground: 202 7% 93%;
+
+    --secondary: 202 7% 7%;
+    --secondary-foreground: 202 7% 93%;
+
+    --muted: 202 7% 12%;
+    --muted-foreground: 202 7% 83%;
+
+    --accent: 202 7% 22%;
+    --accent-foreground: 202 7% 93%;
+
+    --destructive: 4 75% 25%;
+    --destructive-foreground: 202 7% 93%;
+
+    --constructive: 120 75% 10%;
+    --constructive-foreground: 202 7% 93%;
+
+    --border: 202 7% 20%;
+
+    --input: 202 7% 20%;
+
+    --ring: 202 7% 93%;
+
+    --radius: 0.5rem;
+    --radius-large: 1rem;
+    
+    --hover: 202 82% 48%;
+
+    --chart-1: 220 70% 50%;
+    --chart-2: 160 60% 45%;
+    --chart-3: 30 80% 55%;
+    --chart-4: 280 65% 60%;
+    --chart-5: 340 75% 55%;
+  }
+}
+
+@layer components {
+  .fade-right {
+    --fade-width: min(4rem, 25%);
+    -webkit-mask-image: linear-gradient(to left, hsla(0, 0%, 0%, 0) 0%, hsl(0, 0%, 0%) var(--fade-width));
+    mask-image: linear-gradient(to left, hsla(0, 0%, 0%, 0) 0%, hsl(0, 0%, 0%) var(--fade-width));
+  }
+  
+  .fade-bottom {
+    --fade-height: min(4rem, 25%);
+    -webkit-mask-image: linear-gradient(to top, hsla(0, 0%, 0%, 0) 0%, hsl(0, 0%, 0%) var(--fade-height));
+    mask-image: linear-gradient(to top, hsla(0, 0%, 0%, 0) 0%, hsl(0, 0%, 0%) var(--fade-height));
+  }
+}

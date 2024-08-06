@@ -1,0 +1,3 @@
+[
+    { "id": 1, "title": "Building Classification Project", "description": "Aug 2022 - May 2023", "content": "I collected 5 million aerial images from various city GIS servers and programmatically sorted them into 8 categories using publicly available building use code data and then trained a convolutional neural network to recognize various building types using this aerial imagery. Peak accuracy was 89% after using focal loss to combat the overrepresentation of residential buildings in the sample. I eventually adapted this technology with a publically available segmentation model so that it could accept a single input image and classify all of the buildings automatically. This took some time but was a lot of fun upon completion." }
+]

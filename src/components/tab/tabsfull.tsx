@@ -15,9 +15,7 @@ import {
   import {
       ScrollArea, ScrollBar
   } from "../scrollable"
-  import { Button } from "../button"
-import { useCallback, useEffect, useRef, useState } from "react";
-import { motion } from "framer-motion";
+import { useEffect, useState } from "react";
 
 interface Item {
     id: number;

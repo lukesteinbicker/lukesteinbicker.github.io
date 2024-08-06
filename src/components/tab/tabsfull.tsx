@@ -31,17 +31,17 @@ export default function TabsFull () {
     const [projectsentries, setprojectsentries] = useState<Item[]>([])
 
     useEffect(() => {
-        fetch('lukesteinbicker.github.io/education.json')
+        fetch('/education.json')
           .then((response) => response.json())
           .then((data) => seteducationentries(data))
           .catch((error) => console.error('Error fetching education data:', error));
 
-        fetch('lukesteinbicker.github.io/experience.json')
+        fetch('/experience.json')
           .then((response) => response.json())
           .then((data) => setexperienceentries(data))
           .catch((error) => console.error('Error fetching experience data:', error));
 
-        fetch('lukesteinbicker.github.io/projects.json')
+        fetch('/projects.json')
           .then((response) => response.json())
           .then((data) => setprojectsentries(data))
           .catch((error) => console.error('Error fetching projects data:', error));

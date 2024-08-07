@@ -17,10 +17,10 @@ import Globe from "../components/globe/globefull"
 		<main>
 			<div class="h-[50rem] w-full bg-background bg-grid-gray-400/[0.2] relative flex flex-col md:flex-row flex-grow">
 				<div class="absolute pointer-events-none inset-0 flex items-center justify-center bg-background [mask-image:radial-gradient(ellipse_at_center,transparent_20%,black)]"></div>
-				<div class="z-10 w-full lg:w-1/2 p-4 order-2 md:order-1 flex-grow">
+				<div class="hidden md:block z-10 w-full lg:w-1/2 p-4 order-1 flex-grow">
 					<Globe client:only />
 				</div>
-				<div class="z-20 w-full lg:w-1/2 p-4 order-1 md:order-2 md:sticky md:top-0 flex-grow">
+				<div class="z-20 w-full lg:w-1/2 p-4 order-2 sticky top-0 flex-grow">
 					<TabsFull client:load />
 				</div>
 			  </div>

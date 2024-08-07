@@ -1,9 +1,11 @@
 "use client";
 import { motion } from "framer-motion";
 import React, { lazy, Suspense } from 'react';
+import { FlipWords } from "../wordflip";
 
 // Lazy load the World component
 const World = lazy(() => import("./globe").then((module) => ({ default: module.World })));
+const words = ["Programmer", "Explorer", "Researcher", "Learner", "Developer"];
 
 export default function Globe() {
   const globeConfig = {
@@ -411,6 +413,9 @@ export default function Globe() {
         >
         </motion.div>
         <div className="absolute w-full bottom-0 inset-x-0 h-40 bg-gradient-to-b pointer-events-none select-none z-40" />
+        <div className="absolute inset-0 z-0">
+        <FlipWords words={words}/>
+        </div>
         <div className="absolute w-full h-auto md:h-full z-10 pb-8">
           <World data={sampleArcs} globeConfig={globeConfig} />
         </div>

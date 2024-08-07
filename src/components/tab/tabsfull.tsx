@@ -58,7 +58,38 @@ return (
 						</TabsList>
 						<TabsContent value="about">
 						<ScrollArea className="fade-bottom flex-grow px-4 h-96">
-							
+							<div className="py-2">
+							<h1 className="text-4xl bg-clip-text text-transparent bg-gradient-to-b from-popover-foreground to-gray-600">Hello!</h1>
+							</div>
+							<div className="pb-2">
+							<p className="text-foreground">I became interested in software development at the end of high school
+								when working on GIS applications. Programming was a unique creative outlet to make things that I didn&apos;t
+								already see in the world. After I graduate, I plan on contributing to a company where I can work
+								on difficult problems in a fast-paced, innovative environment.
+							</p>
+							</div>
+							<div className="mt-2 pb-2">
+							<p className="text-foreground">Proficient in:
+							</p>
+							<ul className="text-foreground">
+							<li>
+								- Framer Motion, Lucia, TailwindCSS, Keras, pandas/geopandas, Playwright, Requests
+							</li>
+							<li>
+								- NextJS/React
+							</li>
+							<li>
+								- Typescript, Python
+							</li>
+							</ul>
+							</div>
+							<div className="mt-2 pb-2">
+								<ul className="text-foreground underline">
+									<li><a href="https://github.com/lukesteinbicker">GitHub</a></li>
+									<li><a href="https://linkedin.com/in/luke-steinbicker">LinkedIn</a></li>
+									<li><a href="https://docs.google.com/document/d/1FoRvMY4QVUbN5276vvCDHwC6V20jNy6l_XAvvIYs620">Resume</a></li>
+								</ul>
+							</div>
 						</ScrollArea>
 						</TabsContent>
 						<TabsContent value="education">

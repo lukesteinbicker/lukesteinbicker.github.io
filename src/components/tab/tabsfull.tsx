@@ -16,6 +16,7 @@ import {
       ScrollArea, ScrollBar
   } from "../scrollable"
 import { useEffect, useState } from "react";
+import LogoCarousel from "../proficiency";
 
 interface Item {
     id: number;
@@ -57,7 +58,9 @@ return (
 						  <TabsTrigger value="projects">Projects</TabsTrigger>
 						</TabsList>
 						<TabsContent value="about">
-						<ScrollArea className="fade-bottom flex-grow px-4 h-96">
+						<div className="flex">
+						<div className="w-1/2">
+						<ScrollArea className="fade-bottom px-4 h-96">
 							<div className="py-2">
 							<h1 className="text-4xl bg-clip-text text-transparent bg-gradient-to-b from-popover-foreground to-gray-600">Hello!</h1>
 							</div>
@@ -68,22 +71,7 @@ return (
 								on difficult problems in a fast-paced, innovative environment.
 							</p>
 							</div>
-							<div className="mt-2 pb-2">
-							<p className="text-foreground">Proficient in:
-							</p>
-							<ul className="text-foreground">
-							<li>
-								- Framer Motion, Lucia, TailwindCSS, Keras, pandas/geopandas, Playwright, Requests
-							</li>
-							<li>
-								- NextJS/React
-							</li>
-							<li>
-								- Typescript, Python
-							</li>
-							</ul>
-							</div>
-							<div className="mt-2 pb-2">
+							<div>
 								<ul className="text-foreground underline">
 									<li><a href="https://github.com/lukesteinbicker">GitHub</a></li>
 									<li><a href="https://linkedin.com/in/luke-steinbicker">LinkedIn</a></li>
@@ -91,6 +79,11 @@ return (
 								</ul>
 							</div>
 						</ScrollArea>
+						</div>
+						<div className="w-1/2">
+							<LogoCarousel />
+						</div>
+						</div>
 						</TabsContent>
 						<TabsContent value="education">
 						<ScrollArea className="fade-bottom flex-grow px-4 h-96">

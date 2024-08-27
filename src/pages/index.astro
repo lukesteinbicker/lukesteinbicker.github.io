@@ -3,7 +3,6 @@ import BaseHead from '../components/BaseHead.astro';
 import Header from '../components/Header.astro';
 import { SITE_TITLE, SITE_DESCRIPTION } from '../consts';
 import TabsFull from "../components/tab/tabsfull"
-import Globe from "../components/globe/globefull"
 ---
 
 
@@ -15,10 +14,10 @@ import Globe from "../components/globe/globefull"
 	<body class="bg-background">
 		<Header />
 		<main>
-			<div class="h-[50rem] w-full bg-background bg-grid-gray-400/[0.2] relative flex flex-col md:flex-row flex-grow">
+			<div class="h-[50rem] w-full bg-background bg-dot-gray-400/[0.2] relative flex flex-col md:flex-row flex-grow">
 				<div class="absolute pointer-events-none inset-0 flex items-center justify-center bg-background [mask-image:radial-gradient(ellipse_at_center,transparent_20%,black)]"></div>
-				<div class="hidden md:block z-10 w-full lg:w-1/2 p-4 order-1 flex-grow">
-					<Globe client:only />
+				<div class="hidden md:block z-10 w-full lg:w-1/2 pr-4 order-1 flex-grow">
+					<img src="/public/mountains.jpg" class="fade-right w-full h-full object-cover" />
 				</div>
 				<div class="z-20 w-full lg:w-1/2 p-4 order-2 sticky top-0 flex-grow">
 					<TabsFull client:load />

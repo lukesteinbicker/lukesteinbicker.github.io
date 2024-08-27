@@ -69,19 +69,19 @@
 
 @layer components {
   .fade-right {
-    --fade-width: min(4rem, 25%);
+    --fade-width: 100%;
     -webkit-mask-image: linear-gradient(to left, hsla(0, 0%, 0%, 0) 0%, hsl(0, 0%, 0%) var(--fade-width));
     mask-image: linear-gradient(to left, hsla(0, 0%, 0%, 0) 0%, hsl(0, 0%, 0%) var(--fade-width));
   }
 
   .fade-left {
-    --fade-width: min(4rem, 25%);
+    --fade-width: 100%;
     -webkit-mask-image: linear-gradient(to right, hsla(0, 0%, 0%, 0) 0%, hsl(0, 0%, 0%) var(--fade-width));
     mask-image: linear-gradient(to right, hsla(0, 0%, 0%, 0) 0%, hsl(0, 0%, 0%) var(--fade-width));
   }
   
   .fade-bottom {
-    --fade-height: min(4rem, 25%);
+    --fade-height: 25%;
     -webkit-mask-image: linear-gradient(to top, hsla(0, 0%, 0%, 0) 0%, hsl(0, 0%, 0%) var(--fade-height));
     mask-image: linear-gradient(to top, hsla(0, 0%, 0%, 0) 0%, hsl(0, 0%, 0%) var(--fade-height));
   }

@@ -53,17 +53,15 @@ export default function TabsFull() {
           <div className="w-full md:w-1/2">
             <div className="py-2">
               <h1 className="text-4xl bg-clip-text text-transparent bg-gradient-to-b from-popover-foreground to-gray-600">
-                Hello!
+                Welcome
               </h1>
             </div>
             <div className="pb-2">
               <p className="text-foreground">
-                I became interested in software development at the end of high
-                school when working on GIS applications. Programming was a
-                unique creative outlet to make things that I didn't already see
-                in the world. After I graduate, I plan on contributing to a
-                company where I can work on difficult problems in a fast-paced,
-                innovative environment.
+              I became interested in software development at the end of high school when working on GIS applications. 
+              Programming was a unique creative outlet to make things that I didn't already see in the world. 
+              I like contributing to fast-paced, innovative projects that solve difficult problems. 
+              Take a look around! My LinkedIn, GitHub, and resume are in the top right corner.
               </p>
             </div>
           </div>
